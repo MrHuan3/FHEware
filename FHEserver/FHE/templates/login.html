@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/5.2.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.2.2/js/bootstrap.bundle.min.js"></script>
+    <link rel="shortcut icon" href="/statics/images/ico.ico" />
+    <title>Login</title>
+    <style>
+    body {
+      background: url('/statics/images/background.jpg') no-repeat;
+      background-size: 100% 130%;
+    }
+
+    #login_box {
+      width: 30%;
+      height: auto;
+      background-color: #00000080;
+        margin: 7% auto auto;
+        text-align: center;
+      border-radius: 20px;
+      padding: 50px 50px;
+    }
+
+    h2 {
+      color: azure;
+      margin-top: 5%;
+    }
+
+    span {
+      color: #fff;
+    }
+
+    input {
+      border: 0;
+      width: 60%;
+      font-size: 15px;
+      color: #fff;
+      background: transparent;
+      border-bottom: 2px solid #fff;
+      padding: 5px 10px;
+      outline: none;
+      margin-top: 10px;
+    }
+
+    button {
+      margin-top: 50px;
+      width: 60%;
+      height: 30px;
+      border-radius: 10px;
+      border: 0;
+      color: #fff;
+      text-align: center;
+      line-height: 30px;
+      font-size: 15px;
+      background-image: linear-gradient(to right, #30cfd0, #330867);
+    }
+
+  </style>
+</head>
+<body>
+<div class="container-fluid p-1 text-white text-center" style="background-color: black">
+    <h1><img src="/statics/images/logo.png" alt="Logo" width="80" height="80">FHE Blind Extraction <diy class="h4">for Linux</diy></h1>
+</div>
+<div id="login_box">
+    <h2>Hello</h2>
+    <form action="/loginstat/" method="post">
+        <p style="color: #aaaaaa80">Unregistered number will be registered automatically</p>
+        {% csrf_token %}
+        <input name="num" type="text" placeholder="Phone Number">
+        <input name="pwd" type="password" placeholder="Password">
+        <div>
+            <p style="color: red">{{ status }}</p>
+        </div>
+        <button type="submit">Login</button>
+    </form>
+</div>
+<div class="container-fluid mt-2 text-white" style="background-color: black">
+    <div class="row">
+        <div class="col-md-6 p-3">
+            <h5>Scan the QR Code to explore more</h5>
+            <img src="/statics/images/qrcode_github.com.png" alt="Victory HE" width="80" height="80"/>
+        </div>
+        <div class="col-md-6 p-3" style="text-align: right">
+            <h5>FHE Blind Extraction is powered by VictoryLabs HE</h5>
+            <h6>Copyright © 2022 VictoryLabs</h6>
+            <h6>Powered by Bootstrap 5</h6>
+        </div>
+    </div>
+</div>
+</body>
+</html>

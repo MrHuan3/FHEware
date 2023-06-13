@@ -221,7 +221,7 @@ class MainPanel:
             # request for delete cloud video
             msg = clientID + ':Del:' + self.video_name.get()
             cs.SendMsg(msg)
-            time.sleep(0.05)
+            time.sleep(0.5)
             cr = ClientReceive()
             result = cr.ReceiveIndex()
             self.locked = False

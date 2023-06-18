@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/5.2.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.2.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js"></script>
+    <script type="text/javascript">
+        function UploadVideo() {
+            document.getElementById("btn").click();
+        }
+    </script>
+    <link rel="shortcut icon" href="./images/ico.ico" />
+    <title>Blind Extraction</title>
+    <style>
+        body {
+            background: url('./images/background.jpg') no-repeat;
+            background-size: 100% 130%;
+        }
+
+        #side_bar {
+            width: auto;
+            height: auto;
+            background-color: #00000080;
+            border-radius: 20px;
+            padding: 40px 40px;
+        }
+
+        #top_bar {
+            margin-top: 0;
+            width: auto;
+            height: auto;
+            border-radius: 20px;
+            border: 0;
+            text-align: center;
+            line-height: 30px;
+            font-size: 15px;
+            background-image: linear-gradient(to right, #30cfd0, #330867);
+            color: azure;
+            padding: 20px;
+        }
+
+        h5, h4, h3 {
+            color: azure;
+        }
+
+        button {
+          margin-top: 0;
+          width: 70%;
+          height: auto;
+          border-radius: 20px;
+          border: 0;
+          color: #fff;
+          text-align: center;
+          line-height: 30px;
+          font-size: 15px;
+          background-image: linear-gradient(to right, #30cfd0, #330867);
+        }
+
+        #frame {
+            padding-top: 5%;
+            width: 95%;
+            height: 95%;
+            border-radius: 20px;
+            text-align: center;
+            background-image: linear-gradient(to right, #30cfd0, #330867);
+
+        }
+
+    </style>
+</head>
+<body>
+<div class="container-fluid p-1 text-white text-center" style="background-color: black">
+    <h1><img src="./images/logo.png" alt="Logo" width="80" height="80">FHE Blind Extraction <diy class="h4">for Linux</diy></h1>
+</div>
+<div class="mt-5 container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+            <div id="side_bar">
+                <h3 style="color: azure">Blind extract your video</h3>
+                <h3 style="color: azure">Have a try</h3>
+                <p style="text-align: justify; color: azure">Upload your video. Your video cipher will be sent to the
+                    blind computing server which can perform moving object blind extraction from your video. During the
+                    operation the server know nothing about the details of your video.</p>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td><a href="http://10.211.55.21:8000/be/">
+                                <button type="button">Return FHEware Studio</button></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h5>FHEware,</h5>
+                <h4>guarding your</h4>
+                <h3>PRIVACY</h3>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div id="top_bar">
+                <h2 >FHEware Exhibition</h2>
+            </div>
+            <div class="row">
+                <h5 style="text-align: center; color: azure">Extracted Video</h5>
+                <div id="frame">
+                    <video width="400" height="300" controls>
+                        <source src="./videos/download_video.mp4" type="video/mp4">
+                        您的浏览器不支持 video 标签
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid mt-2 text-white" style="background-color: black">
+    <div class="row">
+        <div class="col-md-6 p-3">
+            <h5>Scan the QR Code to explore more</h5>
+            <img src="./images/qrcode_github.com.png" alt="Victory HE" width="80" height="80"/>
+        </div>
+        <div class="col-md-6 p-3" style="text-align: right">
+            <h5>FHE Blind Extraction is powered by VictoryLabs HE</h5>
+            <h6>Copyright © 2022 VictoryLabs</h6>
+            <h6>Powered by Bootstrap 5</h6>
+        </div>
+    </div>
+</div>
+</body>
+</html>

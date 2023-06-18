@@ -1,5 +1,6 @@
 Welcome to FHEserver
 If you use FHEserver for the first time
+Download OpenCV.3.4.16.zip into /FHEserver
 Please run FullyInstall.sh once to install FHEware as root
 After installation completed
 To open FHE web

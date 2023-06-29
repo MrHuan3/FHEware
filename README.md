@@ -26,10 +26,10 @@ Users can request to delete the video ciphers stored in the cloud at any time, a
 
 ### Installation
 
-For service providers, the following command install FHEserver with root priority.
+For service providers, please git FHEware to */root* and the following command install FHEserver with root priority.
 
 ```sh
-sh /FHEserver/ServerInstall.sh
+sh /root/FHEserver/ServerInstall.sh
 ```
 
 If an error is reported, please accord to ServerInstall.sh and install dependent libs.
@@ -39,9 +39,9 @@ If an error is reported, please accord to ServerInstall.sh and install dependent
 Run the following two commands to start web and blind extract program separately.
 
 ```python
-python3 /FHEserver/FHE/manage.py runserver server_IP:8000
+python3 /root/FHEserver/FHE/manage.py runserver Server_IP:8000
 
-python3 /FHEserver/FHEserver/server/FHEserver.py
+python3 /root/FHEserver/FHEserver/server/FHEserver.py
 ```
 
 So far all is done, users can visit your website download and install FHEware client and have their videos extracted.
@@ -68,7 +68,7 @@ FHEware client GUI
 
 ### Attention
 
-Because of the shortage of homomorphic encryption algorithm, FHEware takes up a lot of memory when running. Most error occur due to this reason.
+Because of the shortage of homomorphic encryption algorithm, FHEware takes up a lot of memory when running.
 
 
 

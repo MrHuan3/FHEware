@@ -18,7 +18,7 @@ Users can encrypt videos which contain privacy and upload them to the server. Th
 
 
 
-Moreover, to reduce user disk space usage, files during encryption will be deleted and only necessary files remain. Extracted video ciphers will be stroed in the server side.
+Moreover, to reduce user disk space usage, files during encryption will be deleted and only necessary files remain. Extracted video ciphers will be stored in the server side.
 
 
 
